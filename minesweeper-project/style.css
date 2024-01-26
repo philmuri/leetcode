@@ -47,6 +47,11 @@ body{
     background-size: cover;
 }
 
+.flag{
+    background: url(flag.png);
+    background-size: cover;
+}
+
 .revealed{
     background-color: var(--primary-color);
     cursor: default; 
@@ -54,14 +59,17 @@ body{
 
 .number1{
     color: #00f;
+    font-size: 20px;
 }
 
 .number2{
     color: #0f0;
+    font-size: 20px;
 }
 
 .number3{
     color: #f00;
+    font-size: 20px;
 }
 
 #timer{

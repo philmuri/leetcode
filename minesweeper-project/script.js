@@ -156,6 +156,13 @@ function renderGrid(grid){
             cell.dataset.row = i; // <div class="cell" data-row=""></div>
             cell.dataset.col = j;
             cell.addEventListener('click', () => handleCellClick(i,j));
+            cell.addEventListener('contextmenu', function addFlag(ev){
+                ev.preventDefault() // prevent right-click context menu from opening on right click
+                if(!cell.isRevealed){ // only able to flag non-revealed cells
+                    const cellElement = document.querySelector(`.cell[data-row='${i}'][data-col='${j}']`);
+                    cellElement.classList.add('flag');
+                }
+            })
             minesweeperGrid.appendChild(cell); // this adds the "cell" div as defined above, under the minesweeper-board div
         }
     }
@@ -194,7 +201,10 @@ function revealCell(x, y){
         // below: get the x, y cell element in the html
         const cellElement = document.querySelector(`.cell[data-row='${x}'][data-col='${y}']`);
         cellElement.classList.add('revealed');
-        cellElement.textContent = cell.neighborMines || "0"; // set text in revealed cell to neighbor count
+        if(cellElement.classList.contains("flag")){
+            cellElement.classList.remove("flag");
+        }
+        cellElement.textContent = cell.neighborMines || ""; // set text in revealed cell to neighbor count
         // Handle color of neighbor mine counter
         if(cell.neighborMines === 1){
             cellElement.classList.add('number1');
@@ -206,7 +216,6 @@ function revealCell(x, y){
             cellElement.classList.add('number3');
         }
         // Handle case of no neighboring mines, in which case minesweeper auto-reveals neighboring cells
-        // NOTE: The revealing algorithm bellow is incomplete and doesnt reveal everything as it should
         if(cell.neighborMines === 0){
             const directions = [
                 {dx: -1, dy: -1}, {dx: -1, dy: 0}, {dx: -1, dy: 1},
@@ -220,6 +229,10 @@ function revealCell(x, y){
                 // Reveal neighbor cells inside the grid
                 if(newX >= 0 && newX < grid.length && newY >= 0 && newY < grid[0].length){
                     revealCell(newX, newY); // recursively reveal grid cells until no cells left with zero neighbors
+                    const cellNewElement = document.querySelector(`.cell[data-row='${newX}'][data-col='${newY}']`);
+                    if(cellNewElement.classList.contains("flag")){
+                        cellNewElement.classList.remove("flag");
+                    }
                 }
             }
         }
