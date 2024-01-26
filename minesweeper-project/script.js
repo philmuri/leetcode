@@ -158,9 +158,14 @@ function renderGrid(grid){
             cell.addEventListener('click', () => handleCellClick(i,j));
             cell.addEventListener('contextmenu', function addFlag(ev){
                 ev.preventDefault() // prevent right-click context menu from opening on right click
-                if(!cell.isRevealed){ // only able to flag non-revealed cells
-                    const cellElement = document.querySelector(`.cell[data-row='${i}'][data-col='${j}']`);
-                    cellElement.classList.add('flag');
+                const cellElement = document.querySelector(`.cell[data-row='${i}'][data-col='${j}']`);
+                if(!cellElement.classList.contains('revealed')){ // only able to flag non-revealed cells
+                    if(cellElement.classList.contains('flag')){
+                        cellElement.classList.remove('flag');
+                    }
+                    else{
+                        cellElement.classList.add('flag');
+                    }
                 }
             })
             minesweeperGrid.appendChild(cell); // this adds the "cell" div as defined above, under the minesweeper-board div
@@ -201,8 +206,8 @@ function revealCell(x, y){
         // below: get the x, y cell element in the html
         const cellElement = document.querySelector(`.cell[data-row='${x}'][data-col='${y}']`);
         cellElement.classList.add('revealed');
-        if(cellElement.classList.contains("flag")){
-            cellElement.classList.remove("flag");
+        if(cellElement.classList.contains('flag')){
+            cellElement.classList.remove('flag');
         }
         cellElement.textContent = cell.neighborMines || ""; // set text in revealed cell to neighbor count
         // Handle color of neighbor mine counter
@@ -230,8 +235,8 @@ function revealCell(x, y){
                 if(newX >= 0 && newX < grid.length && newY >= 0 && newY < grid[0].length){
                     revealCell(newX, newY); // recursively reveal grid cells until no cells left with zero neighbors
                     const cellNewElement = document.querySelector(`.cell[data-row='${newX}'][data-col='${newY}']`);
-                    if(cellNewElement.classList.contains("flag")){
-                        cellNewElement.classList.remove("flag");
+                    if(cellNewElement.classList.contains('flag')){
+                        cellNewElement.classList.remove('flag');
                     }
                 }
             }
