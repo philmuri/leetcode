@@ -5,9 +5,4 @@ Got bored so I decided to follow along on a video for a simple minesweeper game.
 - Custom size of grid
     - Need to scale cells appropriately by changing the css grid in #minesweeper-board
     - Add html input box for this
-- Custom number of mines
-    - Add html input box for this
-
-
-## TBD
-- Issue where mine counter on some corner cells does not show up
+- Add right-click option to place flag on cells
