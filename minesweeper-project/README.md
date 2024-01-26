@@ -7,3 +7,7 @@ Got bored so I decided to follow along on a video for a simple minesweeper game.
     - Add html input box for this
 - Custom number of mines
     - Add html input box for this
+
+
+## TBD
+- Issue where mine counter on some corner cells does not show up
