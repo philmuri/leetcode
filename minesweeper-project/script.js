@@ -5,11 +5,31 @@ let timerInterval;
 let timerValue = 0;
 let isPaused = false;
 let isFirstClick = false;
+let upperMineLimit = document.getElementById('integerInput').max
+upperMineLimit = gridSize ** 2
 
 // Introduce button functionality
 document.getElementById("start-button").addEventListener('click', startGame) // on click of start button, call startGame()
 document.getElementById("pause-button").addEventListener('click', togglePause)
 document.getElementById("restart-button").addEventListener('click', restartGame)
+document.getElementById("mines-button").addEventListener('click', submitMineCount)
+
+
+function submitMineCount(){
+    if(timerValue > 0){ // this does not work as intended if you click submit within the first second
+        alert("Changes will take effect when current game has ended.");
+        return;
+    }
+
+    const inputElement = document.getElementById('integerInput');
+    const enteredValue = parseInt(inputElement.value);
+
+    if(isNaN(enteredValue) || enteredValue < 0 || enteredValue > upperMineLimit) {
+        alert(`Mine count must be a number between 0 and ${upperMineLimit}`);
+    } else {
+        numMines = enteredValue;
+    }
+}
 
 // Start game; generate and render grid
 function startGame(){
@@ -18,7 +38,7 @@ function startGame(){
         renderGrid(grid);
     }
 
-    if(isFirstClick){
+    if(!isFirstClick){
         startTimer();
         isFirstClick = false;
     }
