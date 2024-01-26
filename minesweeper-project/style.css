@@ -20,11 +20,15 @@ body{
 }
 
 #minesweeper-board{
-    width: 470px;
-    height: 470px;
+    width: 454px;
+    height: 454px;
     border: 2px solid var(--tertiary-color);
     display: grid;
     grid-template-columns: repeat(15,30px);
+    grid-template-rows: repeat(15,30px);
+    gap: 0px 0px;
+    align-items: center;
+    justify-items: center;
 }
 
 .cell{
@@ -35,7 +39,7 @@ body{
     align-items: center;
     cursor: pointer;
     font-weight: bold;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
 }
 
 .mine{
@@ -44,7 +48,7 @@ body{
 }
 
 .revealed{
-    background-color: #333;
+    background-color: var(--primary-color);
     cursor: default; 
 }
 

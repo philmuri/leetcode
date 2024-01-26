@@ -1,4 +1,4 @@
-let gridSize = 10;
+let gridSize = 15;
 let numMines = 20;
 let grid;
 let timerInterval;
@@ -38,7 +38,7 @@ function startTimer(){
 function updateTimerDisplay(){
     const minutes = Math.floor(timerValue / 60);
     const seconds = timerValue % 60;
-    document.getElementById("timer").textContent = `${formatTime(minutes)}:${formatTime(seconds)}}` // formatted time string
+    document.getElementById("timer").textContent = `${formatTime(minutes)}:${formatTime(seconds)}` // formatted time string
 }
 
 function formatTime(value){
@@ -86,11 +86,13 @@ function generateGrid(size, mines){
 
     // Generate mines
     for(let i = 0; i < mines; i++){
+        let x, y;
         do{
-            let mineRow = Math.floor(Math.random() * size);
-            let mineCol = Math.floor(Math.random() * size);
-        } while(grid[mineCol][mineRow].isMine) // Fill grid with mines until isMine = true
-        grid[mineCol][mineRow].isMine = true // update cell mine state 
+            x = Math.floor(Math.random() * size);
+            y = Math.floor(Math.random() * size);
+        } while(grid[x][y].isMine); // Fill grid with mines until isMine = true
+        
+        grid[x][y].isMine = true; // update cell mine state 
     }
 
     // 
@@ -112,7 +114,7 @@ function countNeighborMines(grid, x, y){
         {dx: 1, dy: -1}, {dx: 1, dy: 0}, {dx: 1, dy: 1},
     ];
 
-    let countNeighbors = 0;
+    let count = 0;
     for(const dir of directions){
         const newX = x + dir.dx;
         const newY = y + dir.dy;
@@ -208,7 +210,7 @@ function revealMines(){
         for(let j = 0; j < grid[0].length; j++){
             const cell = grid[i][j];
             if(cell.isMine){
-                const cellElement = document.querySelector(`.cell[data-row='${x}'][data-col='${y}']`);
+                const cellElement = document.querySelector(`.cell[data-row='${i}'][data-col='${j}']`);
                 cellElement.classList.add('mine');
             }
         }
