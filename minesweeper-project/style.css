@@ -79,12 +79,32 @@ body{
     display: flex;
     flex-direction: column;
     width: 200px;
-    height: 230px;
+    height: 350px;
     border: none;
     margin-left: 10px;
     justify-content: start;
     align-items: center;
+    position: relative;
 }
+
+#settings-container{
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+input{
+    width: 80px;
+    font-size: 16px;
+}
+
 
 button{
     margin: 5px;
