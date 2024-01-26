@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #f5f5dc;
+    --secondary-color: #f7e0b5;
+    --tertiary-color: #000;
+}
+
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+#minesweeper-board{
+    width: 470px;
+    height: 470px;
+    border: 2px solid var(--tertiary-color);
+    display: grid;
+    grid-template-columns: repeat(15,30px);
+}
+
+.cell{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+}
+
+.mine{
+    background: url(mine.png);
+    background-size: cover;
+}
+
+.revealed{
+    background-color: #333;
+    cursor: default; 
+}
+
+.number1{
+    color: #00f;
+}
+
+.number2{
+    color: #0f0;
+}
+
+.number3{
+    color: #f00;
+}
+
+#timer{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: var(--tertiary-color);
+}
+
+#button-container{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 230px;
+    border: none;
+    margin-left: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+}
