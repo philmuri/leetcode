@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-Here, I save some of my submissions to various problems from LeetCode. These are organized by problem number and number below along with a (rough) categorization into programming topics.
+Here, I save some of my submissions to various problems from LeetCode. These are organized by problem number and number below along with a (rough) categorization into programming topics. Note that any helper functions omitted by leetcode are not included in my solutions.
 
 ## Table of Contents
 - [LeetCode Solutions](#leetcode-solutions)
@@ -27,7 +27,7 @@ Here, I save some of my submissions to various problems from LeetCode. These are
 - [412. Fizz Buzz](./easy/412.py)
 
 ### Linked List
-- 
+- [876. Middle of the Linked List](./easy/876.py)
 
 ### Tree
 #### Binary Tree
