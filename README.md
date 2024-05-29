@@ -7,6 +7,7 @@ Here, I save some of my submissions to various problems from LeetCode. These are
   - [Table of Contents](#table-of-contents)
   - [Solutions](#solutions)
     - [Array \& Matrix](#array--matrix)
+    - [Hashmap](#hashmap)
     - [String](#string)
     - [Linked List](#linked-list)
     - [Tree](#tree)
@@ -22,6 +23,9 @@ Here, I save some of my submissions to various problems from LeetCode. These are
 - [1. Two Sum](./easy/1.py)
 - [1480. Running Sum of 1d Array](./easy/1480.py)
 - [1672. Richest Customer Wealth](./easy/1672.py)
+
+### Hashmap
+- [383. Ransom Note](./easy/383.py)
 
 ### String
 - [412. Fizz Buzz](./easy/412.py)
