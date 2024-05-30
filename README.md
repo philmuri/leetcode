@@ -68,9 +68,9 @@ Includes solutions to "Introduction to Pandas" study plan and "30 Days of Pandas
 - [2886. Change Data Type](./easy/2886.py)
 - [2887. Fill Missing Data](./easy/2887.py)
 - [2891. Method Chaining](./easy/2888.py)
+- [595. Big Countries](./easy/595.py)
 
 ### Concatenation, Pivoting, Melting
 - [2888. Reshape Data: Concatenate](./easy/2889.py)
 - [2889. Reshape Data: Pivot](./easy/2890.py)
 - [2890. Reshape Data: Melt](./easy/2891.py)
-
