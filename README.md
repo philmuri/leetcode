@@ -19,6 +19,8 @@ Here, I save some of my submissions to various problems from LeetCode. These are
   - [Solutions - Pandas](#solutions---pandas)
     - [Inspection, Selection, Cleaning](#inspection-selection-cleaning)
     - [Concatenation, Pivoting, Melting](#concatenation-pivoting-melting)
+  - [Solutions - SQL](#solutions---sql)
+    - [JOINs (incl. CROSS \& SELF), CTEs, Subqueries](#joins-incl-cross--self-ctes-subqueries)
 
 ## Solutions - General
 
@@ -74,3 +76,13 @@ Includes solutions to "Introduction to Pandas" study plan and "30 Days of Pandas
 - [2888. Reshape Data: Concatenate](./easy/2889.py)
 - [2889. Reshape Data: Pivot](./easy/2890.py)
 - [2890. Reshape Data: Melt](./easy/2891.py)
+
+## Solutions - SQL
+Includes solutions to "SQL 50" using MySQL database system. I have categorized the problems in roughly the same way as in the study plan. The solutions contained in each file are combinations of approaches I found most suited for learning and expanding my knowledge in SQL - other submissions being available on my Leetcode account.
+### JOINs (incl. CROSS & SELF), CTEs, Subqueries
+- [1378. Replace Employee ID With The Unique Identifier](./easy/1378.sql)
+- [1068. Product Sales Analysis I](./easy/1068.sql)
+- [1581. Customer Who Visited but Did Not Make Any Transactions](./easy/1581.sql)
+- [197. Rising Temperature](./easy/197.sql)
+- [1661. Average Time of Process per Machine](./easy/1661.sql)
+- 
