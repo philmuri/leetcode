@@ -17,12 +17,12 @@ I have also labeled some problems with additional flags:
     - [Hashmap \& Hashset](#hashmap--hashset)
     - [String](#string)
     - [Linked List](#linked-list)
-    - [Tree](#tree)
-      - [Binary Tree](#binary-tree)
+    - [Binary Tree](#binary-tree)
     - [Dynamic Programming / Recursion](#dynamic-programming--recursion)
       - [Backtracking](#backtracking)
-      - [Bit Manipulation](#bit-manipulation)
+    - [Bit Manipulation](#bit-manipulation)
     - [Graph](#graph)
+    - [Special Techniques](#special-techniques)
   - [Solutions - Pandas](#solutions---pandas)
     - [Inspection, Selection, Cleaning](#inspection-selection-cleaning)
     - [Concatenation, Pivoting, Melting](#concatenation-pivoting-melting)
@@ -32,7 +32,7 @@ I have also labeled some problems with additional flags:
 ## Solutions - General
 
 ### Array & Matrix
-- [1. Two Sum](./easy/1.py)
+- [1. Two Sum](./easy/1.py) `*`
 - [1480. Running Sum of 1d Array](./easy/1480.py)
 - [1672. Richest Customer Wealth](./easy/1672.py)
 
@@ -45,8 +45,7 @@ I have also labeled some problems with additional flags:
 ### Linked List
 - [876. Middle of the Linked List](./easy/876.py)
 
-### Tree
-#### Binary Tree
+### Binary Tree
 - [2236. Root Equals Sum of Children](./easy/2236.py)
 
 ### Dynamic Programming / Recursion
@@ -55,12 +54,16 @@ I have also labeled some problems with additional flags:
 - [1255. Maximum Score Words Formed by Letters](./hard/1255.py)
 - [131. Palindrome Partitioning](./medium/131.py)
 
-#### Bit Manipulation
+### Bit Manipulation
 - [1342. Number of Steps to Reduce a Number to Zero](./easy/1342.py)
-- [2351. First Letter to Appear Twice](./easy/2351.py) `n a`
+- [2351. First Letter to Appear Twice](./easy/2351.py) `* n a`
 
 ### Graph
 -
+
+### Special Techniques
+- [1004. Max Consecutive Ones III](./medium/1004.py) (Sliding Window) `* n`
+
 
 ## Solutions - Pandas
 Includes solutions to "Introduction to Pandas" study plan and "30 Days of Pandas" study plan. I have categorized the problems roughly into the same categorization as in the study plans.
