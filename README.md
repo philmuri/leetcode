@@ -2,6 +2,10 @@
 
 Here, I save some of my submissions to various problems from LeetCode. These are organized by problem number and number below along with a (rough) categorization into programming topics. Note that any helper functions omitted by leetcode are not included in my solutions. Most if not all solutions here are my last submissions, or submissions that I thought to be the most elegant out of my submissions. In some cases previous commits can contain other submissions.
 
+I have also labeled some problems with additional flags: 
+- `*` means this problem is particularly well-known or appears often in interviews. 
+- `!` means I personally found the problem difficult, or more difficult than Leetcode difficulty rating claims.
+
 ## Table of Contents
 - [LeetCode Solutions](#leetcode-solutions)
   - [Table of Contents](#table-of-contents)
