@@ -96,4 +96,4 @@ Includes solutions to "SQL 50" using MySQL database system. I have categorized t
 - [1581. Customer Who Visited but Did Not Make Any Transactions](./easy/1581.sql) `a`
 - [197. Rising Temperature](./easy/197.sql) `a`
 - [1661. Average Time of Process per Machine](./easy/1661.sql) `a`
-- 
+- [577. Employee Bonus](./easy/577.sql) `n`
