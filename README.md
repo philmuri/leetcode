@@ -97,3 +97,4 @@ Includes solutions to "SQL 50" using MySQL database system. I have categorized t
 - [197. Rising Temperature](./easy/197.sql) `a`
 - [1661. Average Time of Process per Machine](./easy/1661.sql) `a`
 - [577. Employee Bonus](./easy/577.sql) `n`
+- [1280. Students and Examinations](./easy/1280.sql) `! n`
