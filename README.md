@@ -100,3 +100,4 @@ Includes solutions to "SQL 50" using MySQL database system. I have categorized t
 - [1280. Students and Examinations](./easy/1280.sql) `! n`
 - [570. Managers with at Least 5 Direct Reports](./medium/570.sql) `* n`
 - [1251. Average Selling Price](./easy/1251.sql) `! n a`
+- [1075. Project Employees I](./easy/1075.sql)
