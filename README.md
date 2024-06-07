@@ -28,6 +28,7 @@ I have also labeled some problems with additional flags:
     - [Concatenation, Pivoting, Melting](#concatenation-pivoting-melting)
   - [Solutions - SQL](#solutions---sql)
     - [JOINs (incl. CROSS \& SELF), CTEs, Subqueries](#joins-incl-cross--self-ctes-subqueries)
+    - [Aggregate Functions](#aggregate-functions)
 
 ## Solutions - General
 
@@ -99,5 +100,7 @@ Includes solutions to "SQL 50" using MySQL database system. I have categorized t
 - [577. Employee Bonus](./easy/577.sql) `n`
 - [1280. Students and Examinations](./easy/1280.sql) `! n`
 - [570. Managers with at Least 5 Direct Reports](./medium/570.sql) `* n`
+  
+### Aggregate Functions
 - [1251. Average Selling Price](./easy/1251.sql) `! n a`
 - [1075. Project Employees I](./easy/1075.sql)
