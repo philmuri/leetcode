@@ -99,3 +99,4 @@ Includes solutions to "SQL 50" using MySQL database system. I have categorized t
 - [577. Employee Bonus](./easy/577.sql) `n`
 - [1280. Students and Examinations](./easy/1280.sql) `! n`
 - [570. Managers with at Least 5 Direct Reports](./medium/570.sql) `* n`
+- [1251. Average Selling Price](./easy/1251.sql) `! n a`
