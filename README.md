@@ -1,34 +1,41 @@
 # LeetCode Solutions
 
-Here, I save *some* of my submissions to various problems from LeetCode. These are organized by problem number and number below along with a (rough) categorization into programming topics. Note that any helper functions omitted by leetcode are not included in my solutions. Most if not all solutions here are my last submissions, or submissions that I thought to be the most elegant out of my submissions. In some cases previous commits can contain other submissions. Sometimes if multiple categories fit a problem depending on the approach, I include it under the category that I personally consider the problem fits best.
+I have compiled *some* of my submissions to various problems from LeetCode. These are organized by problem number and number below along with a (rough) categorization into programming topics. Note that any helper functions omitted by leetcode are not included in my solutions. Most if not all solutions here are my last submissions, or submissions that I thought to be the most elegant out of my submissions. In some cases previous commits can contain other submissions. If multiple categories fit a problem, depending on the approach, I include it under the category that I personally consider the problem most suited under.
 
-I have also labeled some problems with additional flags: 
+I have also labeled some problems with additional flags:
+
 - `*` means this problem is particularly **well-known** or appears often in interviews.
+- `u` means this problem introduces a new **useful technique or concept**.
 - `!` means I personally found the problem **difficult**, or more difficult than Leetcode difficulty rating claims.
 - `n` means a **note exists** in my leetcode submission with further details and analysis of my solution(s).
 - `a` means I have included **multiple approaches** here on github for that problem.
 
+**Update:** To reduce clutter and make it easier to show multiple solutions, I have started to include solutions in Jupyter notebooks as well. A single notebook may contain solutions for a particular challenge or topic, and may contain multiple solutions in different cells. I still use the flags above, but now they are written as part of the headers in the notebooks themselves.
+
 ## Table of Contents
 
-- [LeetCode Solutions](#leetcode-solutions)
-  - [Table of Contents](#table-of-contents)
-  - [Solutions - General](#solutions---general)
-    - [Array \& Matrix](#array--matrix)
-    - [Hashmap \& Hashset](#hashmap--hashset)
-    - [String](#string)
-    - [Linked List](#linked-list)
-    - [Binary Tree](#binary-tree)
-    - [Dynamic Programming / Recursion](#dynamic-programming--recursion)
-      - [Backtracking](#backtracking)
-    - [Bit Manipulation](#bit-manipulation)
-    - [Graph](#graph)
-    - [Special Techniques](#special-techniques)
-  - [Solutions - Pandas](#solutions---pandas)
-    - [Inspection, Selection, Cleaning](#inspection-selection-cleaning)
-    - [Concatenation, Pivoting, Melting](#concatenation-pivoting-melting)
-  - [Solutions - SQL](#solutions---sql)
-    - [JOINs (incl. CROSS \& SELF), CTEs, Subqueries](#joins-incl-cross--self-ctes-subqueries)
-    - [Aggregate Functions](#aggregate-functions)
+- [Solutions - Notebooks](#solutions---notebooks)
+- [Solutions - General](#solutions---general)
+  - [Array \& Matrix](#array--matrix)
+  - [Hashmap \& Hashset](#hashmap--hashset)
+  - [String](#string)
+  - [Linked List](#linked-list)
+  - [Binary Tree](#binary-tree)
+  - [Dynamic Programming / Recursion](#dynamic-programming--recursion)
+    - [Backtracking](#backtracking)
+  - [Bit Manipulation](#bit-manipulation)
+  - [Graph](#graph)
+  - [Special Techniques](#special-techniques)
+- [Solutions - Pandas](#solutions---pandas)
+  - [Inspection, Selection, Cleaning](#inspection-selection-cleaning)
+  - [Concatenation, Pivoting, Melting](#concatenation-pivoting-melting)
+- [Solutions - SQL](#solutions---sql)
+  - [JOINs (incl. CROSS \& SELF), CTEs, Subqueries](#joins-incl-cross--self-ctes-subqueries)
+  - [Aggregate Functions](#aggregate-functions)
+
+## Solutions - Notebooks
+
+- [30 Days of Pandas](./notebooks/30-days-of-pandas.ipynb)
 
 ## Solutions - General
 
@@ -42,7 +49,7 @@ I have also labeled some problems with additional flags:
 
 - [383. Ransom Note](./easy/383.py)
 
-###
+### String
 
 - [412. Fizz Buzz](./easy/412.py)
 
@@ -74,7 +81,6 @@ I have also labeled some problems with additional flags:
 ### Special Techniques
 
 - [1004. Max Consecutive Ones III](./medium/1004.py) (Sliding Window) `* n`
-
 
 ## Solutions - Pandas
 
